@@ -3,13 +3,14 @@
 #include<GL/glut.h>
 #include<math.h>
 #include<time.h>
-void delay(unsigned int mseconds)
+
+void delay(unsigned int mseconds) //delay function for the === car moving speed controlling,
 {
   clock_t goal=mseconds+clock();
   while(goal>clock());
 }
 int x;
-void move()
+void move()   // move fnction for the car motion specified,
 {
     {x = x + 500;}
     delay(90000);
